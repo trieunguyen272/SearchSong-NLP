@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Song Search</title>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["keyword"].value;
+            if (x == "") {
+                alert("Enter your keywords!");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <section style='background-image:url(htmlbackground.jpg)' ;>
+
+        <div class="container">
+            <div style="background:transparent !important" class="jumbotron">
+                <div style="font-family: 'Pacifico', cursive;">
+                    <p>
+                        <center>
+                            <font size="8">How are you feeling today?</font>
+                        </center>
+                    </p>
+                </div>
+            </div>
+
+            <form action="results" method="post" name="myForm">
+                <div class="input-group">
+                    <input type="text" class="form-control input-lg" id="keyword" name="keyword" placeholder="Search" autofocus>
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-lg" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                    </div>
+                </div>
+            </form>
+
+            <br><br>
+            <footer class="footer">
+                <p>&copy; 2021 NTT </p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
